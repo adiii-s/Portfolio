@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aditi Singh | Technical Content Writer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(135deg, #c0c9dc, #7c3aed);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: white;
+      color: #2563eb;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e0e7ff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+      border-left: 5px solid #324161;
+      padding-left: 10px;
+    }
+
+    /* Grid */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      border-top: 4px solid #273451;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    /* Featured Card */
+    .featured {
+      border-top: 4px solid #7c3aed;
+      background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+    }
+
+    /* Tag */
+    .tag {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #2563eb;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .card a:hover {
+      color: #7c3aed;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 30px;
+      text-align: center;
+      background: #1e293b;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Aditi Singh</h1>
+  <p>Technical Content Writer | SEO | WordPress</p>
+  <p>Simplifying complex tech into clear, user-friendly content</p>
+  <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I’m a Technical Content Writer with a background in computer applications,
+    passionate about simplifying complex technical concepts into engaging content.
+  </p>
+  <p>
+    I have experience creating SEO-optimized blogs, tutorials, and documentation at Thinkcloudly and Tpoint Tech.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Technical Content Writer – Thinkcloudly</h3>
+    <p>SEO blogs, WordPress management, Canva visuals, keyword research.</p>
+  </div>
+
+  <div class="card">
+    <h3>Technical Content Writer – Tpoint Tech</h3>
+    <p>Technical tutorials, documentation, editing, and content optimization.</p>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2>Featured Articles</h2>
+
+  <div class="project-grid">
+
+    <!-- FEATURED -->
+    <div class="card featured">
+      <span class="tag">Career / IT</span>
+      <h3>Free Bootcamps to Get a Job in IT</h3>
+      <p>How Thinkcloudly bootcamps help you gain skills and land IT jobs.</p>
+      <a href="https://thinkcloudly.com/blog/free-bootcamp-career-in-it/" target="_blank">Read Article →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">GRC / Automation</span>
+      <h3>Automation in Modern GRC Programs</h3>
+      <p>How automation improves governance, risk, and compliance efficiency.</p>
+      <a href="https://thinkcloudly.com/blog/automation-in-modern-grc-programs/" target="_blank">Read →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">AI / GenAI</span>
+      <h3>Top Open-Source Gen AI Models (2026)</h3>
+      <p>Powerful AI models and their real-world use cases.</p>
+      <a href="https://thinkcloudly.com/blog/top-open-source-ai-models/" target="_blank">Read →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">JavaScript</span>
+      <h3>JavaScript .append()</h3>
+      <p>Explanation of append() with practical examples.</p>
+      <a href="https://www.tpointtech.com/javascript-append" target="_blank">Read →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Web Dev</span>
+      <h3>How to Add JavaScript to HTML</h3>
+      <p>Guide for beginners to integrate JavaScript.</p>
+      <a href="https://www.tpointtech.com/how-to-add-javascript-to-html" target="_blank">Read →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Event</span>
+      <h3>Singapore Tech Event</h3>
+      <p>Insights from Thinkcloudly’s IT career event.</p>
+      <a href="https://thinkcloudly.com/blog/singapore-event-it-career/" target="_blank">Read →</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <p><strong>Technical Writing:</strong> Documentation, Blogs, SEO</p>
+  <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+  <p><strong>Tools:</strong> WordPress, Canva, GitHub</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: aditisingh892@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/adiii" target="_blank">github.com/adiii</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Aditi Singh</p>
+</footer>
+
+</body>
+</html>
