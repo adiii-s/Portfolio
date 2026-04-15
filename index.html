@@ -5,6 +5,7 @@
   <title>Aditi Singh | Technical Content Writer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -19,9 +20,19 @@
       background: #f8fafc;
       color: #1e293b;
     }
+    /* Profile Image */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 
     header {
-      background: linear-gradient(135deg, #c0c9dc, #7c3aed);
+      background: linear-gradient(135deg, #9aaacd, #7c3aed);
       color: white;
       padding: 80px 20px;
       text-align: center;
@@ -33,6 +44,7 @@
 
     header p {
       margin-top: 10px;
+      font-size: 1.1rem;
     }
 
     .btn {
@@ -40,7 +52,7 @@
       margin-top: 20px;
       padding: 10px 20px;
       background: white;
-      color: #2563eb;
+      color: #272f40;
       border-radius: 25px;
       font-weight: bold;
       transition: 0.3s;
@@ -51,7 +63,7 @@
     }
 
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 60px auto;
       padding: 0 20px;
     }
@@ -59,26 +71,25 @@
     h2 {
       margin-bottom: 25px;
       font-size: 1.8rem;
-      border-left: 5px solid #324161;
+      border-left: 5px solid #2563eb;
       padding-left: 10px;
     }
 
-    /* Grid */
+    /* GRID */
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
     }
 
-    /* Card */
+    /* CARD */
     .card {
       background: white;
-      padding: 20px;
       border-radius: 15px;
+      overflow: hidden;
       transition: 0.3s;
       box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      border-top: 4px solid #273451;
-      position: relative;
+      border-top: 4px solid #3e4b69;
     }
 
     .card:hover {
@@ -86,21 +97,36 @@
       box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     }
 
-    /* Featured Card */
-    .featured {
-      border-top: 4px solid #7c3aed;
-      background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+    /* IMAGE */
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
 
-    /* Tag */
+    .card-content {
+      padding: 20px;
+    }
+
+    /* TAGS */
     .tag {
       display: inline-block;
-      background: #e0e7ff;
-      color: #2563eb;
       padding: 5px 10px;
       border-radius: 20px;
       font-size: 12px;
       margin-bottom: 10px;
+    }
+
+    .ai { background: #ede9fe; color: #7c3aed; }
+    .js { background: #fef9c3; color: #ca8a04; }
+    .grc { background: #e0f2fe; color: #0284c7; }
+    .career { background: #dcfce7; color: #16a34a; }
+    .event { background: #fee2e2; color: #dc2626; }
+
+    /* FEATURED */
+    .featured {
+      border: 2px solid #7c3aed;
+      transform: scale(1.02);
     }
 
     .card a {
@@ -127,20 +153,18 @@
 <body>
 
 <header>
+    <img src="pp.jpg" alt="Aditi Singh" class="profile-pic">
   <h1>Aditi Singh</h1>
-  <p>Technical Content Writer | SEO | WordPress</p>
-  <p>Simplifying complex tech into clear, user-friendly content</p>
+  <p>I write SEO-optimized technical content that simplifies complex technology.</p>
   <a href="#projects" class="btn">View My Work</a>
 </header>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I’m a Technical Content Writer with a background in computer applications,
-    passionate about simplifying complex technical concepts into engaging content.
-  </p>
-  <p>
-    I have experience creating SEO-optimized blogs, tutorials, and documentation at Thinkcloudly and Tpoint Tech.
+    I’m a Technical Content Writer with experience in creating SEO-friendly blogs,
+    tutorials, and documentation. I specialize in simplifying complex technical
+    topics into clear and engaging content.
   </p>
 </section>
 
@@ -148,13 +172,17 @@
   <h2>Experience</h2>
 
   <div class="card">
-    <h3>Technical Content Writer – Thinkcloudly</h3>
-    <p>SEO blogs, WordPress management, Canva visuals, keyword research.</p>
+    <div class="card-content">
+      <h3>Thinkcloudly</h3>
+      <p>SEO blogs, WordPress management, Canva visuals.</p>
+    </div>
   </div>
 
   <div class="card">
-    <h3>Technical Content Writer – Tpoint Tech</h3>
-    <p>Technical tutorials, documentation, editing, and content optimization.</p>
+    <div class="card-content">
+      <h3>Tpoint Tech</h3>
+      <p>Technical tutorials, documentation, editing.</p>
+    </div>
   </div>
 
 </section>
@@ -166,45 +194,63 @@
 
     <!-- FEATURED -->
     <div class="card featured">
-      <span class="tag">Career / IT</span>
-      <h3>Free Bootcamps to Get a Job in IT</h3>
-      <p>How Thinkcloudly bootcamps help you gain skills and land IT jobs.</p>
-      <a href="https://thinkcloudly.com/blog/free-bootcamp-career-in-it/" target="_blank">Read Article →</a>
+      <img src="Bootcamp.jpg" alt="">
+      <div class="card-content">
+        <span class="tag career">Career / IT</span>
+        <h3>Free Bootcamps to Get a Job in IT</h3>
+        <p>How Thinkcloudly bootcamps help you land IT jobs.</p>
+        <a href="https://thinkcloudly.com/blog/free-bootcamp-career-in-it/" target="_blank">Read →</a>
+      </div>
     </div>
 
     <div class="card">
-      <span class="tag">GRC / Automation</span>
-      <h3>Automation in Modern GRC Programs</h3>
-      <p>How automation improves governance, risk, and compliance efficiency.</p>
-      <a href="https://thinkcloudly.com/blog/automation-in-modern-grc-programs/" target="_blank">Read →</a>
+      <img src="grc.jpg" alt="">
+      <div class="card-content">
+        <span class="tag grc">GRC</span>
+        <h3>Automation in Modern GRC</h3>
+        <p>Automation improving governance and compliance.</p>
+        <a href="https://thinkcloudly.com/blog/automation-in-modern-grc-programs/" target="_blank">Read →</a>
+      </div>
     </div>
 
     <div class="card">
-      <span class="tag">AI / GenAI</span>
-      <h3>Top Open-Source Gen AI Models (2026)</h3>
-      <p>Powerful AI models and their real-world use cases.</p>
-      <a href="https://thinkcloudly.com/blog/top-open-source-ai-models/" target="_blank">Read →</a>
+      <img src="AI.jpg" alt="">
+      <div class="card-content">
+        <span class="tag ai">AI</span>
+        <h3>Top Gen AI Models (2026)</h3>
+        <p>Open-source AI models and use cases.</p>
+        <a href="https://thinkcloudly.com/blog/top-open-source-ai-models/" target="_blank">Read →</a>
+      </div>
     </div>
 
     <div class="card">
-      <span class="tag">JavaScript</span>
-      <h3>JavaScript .append()</h3>
-      <p>Explanation of append() with practical examples.</p>
-      <a href="https://www.tpointtech.com/javascript-append" target="_blank">Read →</a>
+      <img src="js.jpg" alt="">
+      <div class="card-content">
+        <span class="tag js">JavaScript</span>
+        <h3>JavaScript .append()</h3>
+        <p>Guide with examples.</p>
+        <a href="https://www.tpointtech.com/javascript-append" target="_blank">Read →</a>
+      </div>
     </div>
 
     <div class="card">
-      <span class="tag">Web Dev</span>
-      <h3>How to Add JavaScript to HTML</h3>
-      <p>Guide for beginners to integrate JavaScript.</p>
-      <a href="https://www.tpointtech.com/how-to-add-javascript-to-html" target="_blank">Read →</a>
+      <img src="HTML.jpg" alt="">
+      <div class="card-content">
+        <span class="tag js">Web Dev</span>
+        <h3>Add JavaScript to HTML</h3>
+        <p>Beginner-friendly tutorial.</p>
+        <a href="https://www.tpointtech.com/how-to-add-javascript-to-html" target="_blank">Read →</a>
+      </div>
     </div>
 
     <div class="card">
-      <span class="tag">Event</span>
-      <h3>Singapore Tech Event</h3>
-      <p>Insights from Thinkcloudly’s IT career event.</p>
-      <a href="https://thinkcloudly.com/blog/singapore-event-it-career/" target="_blank">Read →</a>
+      <img src="Event.jpg" alt="">
+      <div class="card-content">
+        <span class="tag event">Event</span>
+        <h3>Singapore Tech Event</h3>
+        <p>Insights from Thinkcloudly event.</p>
+        <a href="https://thinkcloudly.com/blog/singapore-event-it-career/" target="_blank">Read →</a>
+      </div>
     </div>
 
   </div>
@@ -212,7 +258,7 @@
 
 <section>
   <h2>Skills</h2>
-  <p><strong>Technical Writing:</strong> Documentation, Blogs, SEO</p>
+  <p><strong>Technical Writing:</strong> Blogs, Documentation, SEO</p>
   <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
   <p><strong>Tools:</strong> WordPress, Canva, GitHub</p>
 </section>
